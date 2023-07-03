@@ -1,0 +1,128 @@
+#about{
+    width: 100%;
+    padding: 15rem 0;
+    border-top: 0.5rem solid var(--secondary-color);
+    border-top-style: dotted;
+}
+.about-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem 6rem;
+    flex-wrap: nowrap;
+}
+
+/* about left side start */
+.about-col.left{
+    flex-basis: calc(60% - 3rem);
+    position: relative;
+    z-index: 2;
+}
+.abt-icon{
+    position: absolute;
+    content: "";
+    width: 15rem;
+    height: 15rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+.about-text{
+    padding-right: 2rem;
+}
+.about-text>article{
+    display: flex;
+    flex-direction: column;
+}
+.about-text>article>h1{
+    font-family: var(--primary-font);
+    font-size: 8rem;
+    padding: 6.5rem 0 0 6.5rem;
+    font-weight: 100;
+    color: var(--black-color);
+}
+.about-text>article>address{
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: normal;
+    color: var(--balck-color);
+    font-style: normal;
+    opacity: 0.8;
+    line-height: 4rem;
+    padding-top: 2.5rem;
+}
+.about-text>article>p{
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.8rem;
+    word-spacing: 0.7rem;
+    padding-bottom: 2.5rem;
+    padding-top: 0.5rem;
+    max-width: 75rem;
+}
+/* about left side end */
+
+
+/* about right side start */
+.about-col.right{
+    flex-basis: calc(40% - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-vwr-win{
+    max-width: 48rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    border: 2px solid var(--black-color);
+}
+.img-vwr-win-head{
+    width: 100%;
+    display: flex;
+    padding: 1.5rem 2.5rem;
+    background: var(--secondary-color);
+    gap: 1rem;
+    border-bottom: 2px solid var(--black-color);
+}
+.img-vwr-win-head>button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 2px solid var(--black-color);
+}
+.img-vwr-win-body{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.img-win-scroll{
+    width: 2rem;
+    background: var(--white-color);
+    position: relative;
+    z-index: 2;
+    border-left: 2px solid var(--black-color);
+}
+.img-win-scroll::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: -2px;
+    top: 50%;
+    transform: translateY(calc(-50% - 4rem));
+    background: var(--secondary-color);
+    height: 30%;
+    border: 2px solid var(--black-color);
+    border-radius: 2.5rem;
+}
+.img-win{
+    width: 100%;
+    max-height: 56rem;
+}
+.img-win>img{
+    width: 100%;
+    height: 100%;
+}
+/* about right side end */

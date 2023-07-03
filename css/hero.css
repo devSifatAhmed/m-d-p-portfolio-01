@@ -1,0 +1,148 @@
+#hero{
+    width: 100%;
+    display: flex;
+    padding: 22rem 0 15rem 0;
+    position: relative;
+}
+.hero-container{
+    width: 100%;
+    display: flex;
+    gap: 4rem 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.hero-col{
+    width: calc(50% - 4rem);
+}
+
+/* hero left side start */
+.hero-col.left{
+    display: flex;
+    justify-content: center;
+}
+.sleek-display{
+    width: 55rem;
+    height: fit-content;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid var(--black-color);
+    z-index: 10;
+}
+.sleek-d-header{
+    width: 100%;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    border-bottom: 2px solid var(--black-color);
+    background: var(--secondary-color);
+}
+.sleek-d-header>button{
+    width: 2rem;
+    height: 2rem;
+    background: var(--white-color);
+    border: 2px solid var(--black-color);
+}
+.sleek-body{
+    flex-basis: 100%;
+    height: fit-content;
+}
+.sleek{
+    width: 100%;
+    height: 40rem;
+}
+.sleek>img{
+    width: 100%;
+    height: 100%;
+}
+/* hero left side end */
+
+
+
+
+
+
+
+/* hero right side start */
+.hero-col.right{
+    display: flex;
+    justify-content: flex-start;
+}
+.hero-text{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+}
+.hero-text>span>p{
+    font-family: var(--primary-font);
+    font-size: 4rem;
+    position: relative;
+    margin-left: -3rem;
+}
+.hero-text>address{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-size: 8rem;
+}
+.hero-text>h3{
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: normal;
+}
+.hero-text>p{
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 3rem;
+    word-spacing: 0.7rem;
+}
+.hero-text-para>span,
+.hero-text-name>span,
+.hero-text-title>span{
+    position: relative;
+    display: inline-block;
+}
+/* hero right side end */
+
+.d{
+    height: 200vh;
+}
+
+/* @media (max-width:940px){
+    .hero-text>p{
+        font-size: 2.3rem;
+        line-height: 3.3rem;
+        word-spacing: 1rem;
+    }
+}
+@media (max-width:750px){
+    .hero-container{
+        gap: 4rem 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero-col.left{
+        order: 1;
+    }
+    .hero-col{
+        width: 100%;
+    }
+    .hero-col.right{
+        justify-content: center;
+    }
+    .sleek-display{
+        width: 65rem;
+    }
+    .sleek{
+        width: 100%;
+        height: 50rem;
+    }
+    .sleek-d-header>button{
+        font-size: 1.2rem;
+    }
+} */
